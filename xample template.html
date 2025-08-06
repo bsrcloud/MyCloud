@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Landing Page Template</title>
+<style>
+  /* Reset & base */
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0; padding: 0;
+    background: #f4f4f4;
+    color: #333;
+  }
+  a {
+    text-decoration: none;
+  }
+
+  /* Header */
+  header {
+    background: #3a79c6;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+  }
+  header img.logo {
+    height: 50px;
+  }
+  header .logo-text {
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    margin-left: 15px;
+  }
+
+  /* Video Player */
+  #video-player-container {
+    background: #be1650;
+    padding: 20px;
+    text-align: center;
+  }
+  #video-player-container video {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+
+  /* About section */
+  #about {
+    background: #ddd;
+    margin: 20px;
+    border-radius: 8px;
+    padding: 20px;
+    border: 1px solid #aaa;
+  }
+  #about p.description {
+    margin: 0 0 10px 0;
+    font-style: italic;
+  }
+  #about .tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  #about .tab {
+    background-color: #3a79c6;
+    color: white;
+    font-weight: 700;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    user-select: none;
+    flex: 1 1 45%;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  #about .tab:hover {
+    background-color: #2f5fa0;
+  }
+
+  /* Konten bergambar */
+  #image-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin: 20px;
+  }
+  .image-card {
+    position: relative;
+    background: #be1650;
+    border-radius: 8px;
+    height: 120px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 14px;
+  }
+  .image-card .play-icon {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    width: 30px;
+    height: 30px;
+    background: rgba(255,255,255,0.8);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .image-card .play-icon svg {
+    fill: #be1650;
+    width: 18px;
+    height: 18px;
+  }
+
+  /* Link tree style buttons */
+  #link-tree {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    gap: 10px;
+  }
+  #link-tree a {
+    background-color: #3880C1;
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 25px;
+    display: inline-block;
+    text-decoration: none !important; /* force no underline */
+    font-weight: 600;
+    width: 80%;
+    max-width: 300px;
+    text-align: center;
+  }
+  #link-tree a:hover {
+    background-color: #2d65a1;
+  }
+
+  /* Footer */
+  footer {
+    background: #222;
+    color: #eee;
+    text-align: center;
+    padding: 15px 10px;
+    font-size: 14px;
+  }
+</style>
+<meta content='8ba61dbd743d95193f5b49657c00c077' name='monetag'/>  
+ 
+<script async='async' data-cfasync='false' data-zone='161653' src='https://fpyf8.com/88/tag.min.js'/>  
+
+</head>
+<body>
+
+<header>
+  <img src="logo.png" alt="Logo" class="logo" />
+  <div class="logo-text">LOGO</div>
+</header>
+
+<section id="video-player-container">
+  <video autoplay loop muted playsinline>
+    <source src="video.mp4" type="video/mp4" />
+    Browser you are using does not support video playback.
+  </video>
+</section>
+
+
+<section id="about">
+  <p class="description">Lorem ipsum description tentang blog atau website Anda yang memberikan nilai lebih kepada pengunjung.</p>
+  <div class="tabs">
+    <div class="tab" data-link="https://example.com/tab1">Tab Link 1</div>
+    <div class="tab" data-link="https://example.com/tab2">Tab Link 2</div>
+    <div class="tab" data-link="https://example.com/tab3">Tab Link 3</div>
+    <div class="tab" data-link="https://example.com/tab4">Tab Link 4</div>
+  </div>
+</section>
+
+<section id="image-content">
+  <!-- 10 image-thumbnail with play icon -->
+  <div class="image-card">Image thumbnail 1
+    <div class="play-icon" aria-label="Play Icon">
+      <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+    </div>
+  </div>
+  <div class="image-card">Image thumbnail 2
+    <div class="play-icon" aria-label="Play Icon">
+      <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+    </div>
+  </div>
+  <div class="image-card">Image thumbnail 3
+    <div class="play-icon" aria-label="Play Icon">
+      <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+    </div>
+  </div>
+  <div class="image-card">Image thumbnail 4
+    <div class="play-icon" aria-label="Play Icon">
+      <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+    </div>
+  </div>
+  <div class="image-card">Image thumbnail 5
+    <div class="play-icon" aria-label="Play Icon">
+      <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+    </div>
+  </div>
+  <div class="image-card">Image thumbnail 6
+    <div class="play-icon" aria-label="Play Icon">
+      <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+    </div>
+  </div>
+  <div class="image-card">Image thumbnail 7
+    <div class="play-icon" aria-label="Play Icon">
+      <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+    </div>
+  </div>
+  <div class="image-card">Image thumbnail 8
+    <div class="play-icon" aria-label="Play Icon">
+      <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+    </div>
+  </div>
+  <div class="image-card">Image thumbnail 9
+    <div class="play-icon" aria-label="Play Icon">
+      <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+    </div>
+  </div>
+  <div class="image-card">Image thumbnail 10
+    <div class="play-icon" aria-label="Play Icon">
+      <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+    </div>
+  </div>
+</section>
+
+<section id="link-tree">
+  <a href="https://link1.example" target="_blank" rel="noopener noreferrer">Link 1</a>
+  <a href="https://link2.example" target="_blank" rel="noopener noreferrer">Link 2</a>
+  <a href="https://link3.example" target="_blank" rel="noopener noreferrer">Link 3</a>
+  <a href="https://link4.example" target="_blank" rel="noopener noreferrer">Link 4</a>
+  <a href="https://link5.example" target="_blank" rel="noopener noreferrer">Link 5</a>
+</section>
+
+<footer>
+  <div>Credits: Design by BSR Template</div>
+</footer>
+
+<script>
+  // Add click event on tabs to open link in new tab
+  document.querySelectorAll('#about .tab').forEach(tab => {
+    tab.addEventListener('click', () => {
+      const link = tab.getAttribute('data-link');
+      if (link) {
+        window.open(link, '_blank');
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
